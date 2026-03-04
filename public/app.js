@@ -68,4 +68,17 @@ alert(error.message);
 
 });
 
+
+}
+function book() {
+  const vehicle = document.getElementById('vehicle').value;
+  const date = document.getElementById('date').value;
+  const time = document.getElementById('time').value;
+
+  if (vehicle && date && time) {
+    alert(`Appointment booked for ${vehicle} on ${date} at ${time}`);
+    // Here you would typically send this data to a server or process it further
+  } else {
+    alert("Please fill in all appointment details.");
+  }
 }
